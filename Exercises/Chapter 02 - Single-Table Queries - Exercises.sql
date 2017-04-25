@@ -9,6 +9,14 @@
 -- Return orders placed in June 2015
 -- Tables involved: TSQLV4 database, Sales.Orders table
 
+-- Solution (Mohamed)
+SELECT orderid
+       , orderdate
+	   , custid
+	   , empid
+FROM Sales.Orders
+WHERE orderdate >= '20150601' AND orderdate < '20150701';
+
 -- Desired output:
 orderid     orderdate  custid      empid
 ----------- ---------- ----------- -----------
